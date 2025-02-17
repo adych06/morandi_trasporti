@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+#background-video{
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 40%;
+    object-fit:cover;
+    z-index: 1;
+    border-radius: 0;
+    margin-left: 55%;
+    border-radius: 200px;
+}
+.CompanyName p
+{
+  color: black;
+  margin-top: -30%;
+}
+.desc_abus
+{
+  color: black;
+  margin-top: 10%;
+  display: block;
+  width: 40%;
+  margin: 0%;
+}
+
+.bottone
+{
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color:darkslategray ;
+  padding: 1%;
+  width: 150px;
+  text-align: center;
+  margin-top: -50%;
+  margin-left: 20%;
+  border-radius: 50px;
+}
+
+/* Mobile (smartphones) */
+@media only screen and (max-width: 767px) {
+    #background-video {
+        width: 90%;
+        height: 300px;
+        margin: 20px auto;
+        margin-left: 5%;
+        border-radius: 30px;
+    }
+
+    .CompanyName p {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-top: 200px;  /* Aumentato significativamente */
+    }
+
+    .desc_abus {
+        width: 90%;
+        margin: 30px auto;
+        text-align: center;
+        margin-top: 100px;  /* Aumentato */
+    }
+
+    .bottone {
+        margin: 30px auto;
+        width: 200px;
+        padding: 3%;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #background-video {
+        width: 60%;
+        height: 350px;
+        margin-left: 20%;
+        margin-top: 40px;
+        border-radius: 100px;
+    }
+
+    .CompanyName p {
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 250px;  /* Aumentato significativamente */
+    }
+
+    .desc_abus {
+        width: 70%;
+        margin: 40px auto;
+        margin-top: 120px;  /* Aumentato */
+    }
+
+    .bottone {
+        margin: 20px auto;
+        width: 180px;
+        padding: 2%;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+    #background-video {
+        width: 40%;
+        height: 40%;
+        margin-left: 55%;
+        border-radius: 200px;
+    }
+
+    .CompanyName p {
+        margin-top: 300px;  /* Aumentato significativamente */
+    }
+
+    .desc_abus {
+        width: 40%;
+        margin: 10%;
+        margin-top: 150px;  /* Aumentato */
+    }
+
+    .bottone {
+        width: 150px;
+        margin-top: -10%;
+        margin-left: 20%;
+        padding: 1%;
+    }
+}

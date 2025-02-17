@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('IMG/sfondo\ login\ .jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.wrapper .input-box{
+  position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+  color: #fff;
+}
+
+.input-box i{
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.wrapper .remember-forgot{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot label input{
+  accent-color: #fff;
+  margin-right: 3px;
+}
+
+.remember-forgot a{
+  color: #fff;
+}
+
+.remember-forgot a:hover{
+  text-decoration: underline;
+}
+
+.wrapper .btn{
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+.wrapper .register-link{
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.register-link p a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover{
+  text-decoration: underline;
+}
+
+a{
+  text-decoration: none;
+}
+
+.messageDiv{
+  background-color: hs1(327, 90%, 28%);
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  opacity: 0;
+  animation: fadeOut 7s forwards;
+}
+/* Default styles for larger screens */
+.wrapper {
+  width: 420px;
+}
+
+/* Media Query for tablets and smaller devices */
+@media (max-width: 768px) {
+  .wrapper {
+      width: 90%; /* Allow wrapper to take up more space on smaller screens */
+      padding: 20px; /* Reduce padding */
+  }
+
+  .wrapper h1 {
+      font-size: 30px; /* Decrease font size */
+  }
+
+  .input-box input {
+      font-size: 14px; /* Decrease input font size */
+  }
+
+  .wrapper .btn {
+      height: 40px; /* Adjust button height */
+      font-size: 14px; /* Adjust button font size */
+  }
+
+  .register-link {
+      font-size: 12px; /* Smaller font size for links */
+  }
+}
+
+
+/* Media Query for mobile devices */
+@media (max-width: 480px) {
+  .wrapper {
+      width: 95%; /* Make wrapper even wider on mobile */
+      padding: 15px; /* Further reduce padding */
+  }
+
+  .wrapper h1 {
+      font-size: 24px; /* Further decrease font size */
+  }
+
+  .input-box {
+      margin: 20px 0; /* Reduce margin */
+  }
+
+  .input-box input {
+      padding: 15px; /* Adjust padding for inputs */
+  }
+
+  .wrapper .btn {
+      height: 35px; /* Adjust button height for mobile */
+      font-size: 12px; /* Adjust button font size */
+  }
+
+  .messageDiv {
+      font-size: 0.9rem; /* Adjust message font size */
+  }
+}
