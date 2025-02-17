@@ -16,11 +16,12 @@
     border-radius: 0;
     margin-left: 55%;
     border-radius: 200px;
+    margin-top: -20%;
 }
 .CompanyName p
 {
   color: black;
-  margin-top: -30%;
+  margin-top: 0%;
 }
 .desc_abus
 {
@@ -36,7 +37,7 @@
   display: block;
   text-decoration: none;
   color: white;
-  background-color:darkslategray ;
+  background-color:black ;
   padding: 1%;
   width: 150px;
   text-align: center;
