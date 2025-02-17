@@ -101,7 +101,7 @@ main {
     text-align: center;
     color: black; 
     z-index: -2; 
-    margin-top: 3%;
+    margin-top: -50%;
 }
 
 .WWD{
@@ -110,7 +110,7 @@ main {
     text-align: center;
     color: black; 
     z-index: -2; 
-    margin-top: 15%;    
+    margin-top: 0;    
 }
 
 .test-background{
@@ -202,11 +202,9 @@ a{
   color: rgb(255, 255, 255);
   margin-top: 35%;
   margin-right: 35%;
-  margin-bottom: -10%;
 }
 
 /* Media Queries */
-
 /* Per schermi piccoli (smartphone) */
 @media only screen and (max-width: 600px) {
   .NewsText, .WWD {

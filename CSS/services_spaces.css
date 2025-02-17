@@ -8,5 +8,19 @@
 }
 
 main{
-    margin-top: -20%;
+    margin-top: 30%;
+}
+
+/* Mobile (smartphones) */
+@media only screen and (max-width: 767px) {
+    main {
+        margin-top: -100%;  /* Aumentato per schermi piccoli */
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    main {
+        margin-top: -100%;  /* Valore intermedio per tablet */
+    }
 }
