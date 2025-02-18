@@ -8,12 +8,13 @@
   max-width: 100%;
 }
 
-.LinkBar{
-    background-color: white;
-    border-radius: 0 0 2rem 2rem;
-    position: fixed;
-    z-index: 2;
+/* Rimuovi margini e padding dal body */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
+
 
 header{
     position: absolute;
@@ -64,24 +65,93 @@ header ul li a.active
     color: white;
 }
 
-/* Aggiungi il pulsante hamburger */
+/* Stile base per il pulsante hamburger */
 .menu-toggle {
-    display: none;
+    display: block;
     cursor: pointer;
     padding: 15px;
     position: fixed;
     right: 20px;
     top: 20px;
     z-index: 1000;
+    background: rgba(176, 180, 180, 0.5); /* Sfondo grigio semi-trasparente */
+    border-radius: 5px; /* Bordi arrotondati */
 }
 
 .menu-toggle span {
     display: block;
     width: 25px;
     height: 3px;
-    background-color: black;
+    background-color: white; /* Mantenute bianche */
     margin: 5px 0;
     transition: 0.4s;
+}
+
+/* Stile base per il menu */
+.LinkBar nav ul {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    padding-top: 60px;
+    transition: 0.4s;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.LinkBar nav ul.active {
+    right: 0;
+    display: flex;
+}
+
+.LinkBar nav ul li {
+    margin: 15px 0;
+    padding: 0 30px;
+}
+
+.LinkBar nav ul li a {
+    font-size: 1.2rem;
+    padding: 10px 0;
+    display: block;
+    width: 100%;
+    color: white;
+}
+
+/* Animazione hamburger */
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Specifiche per smartphone */
+@media only screen and (max-width: 767px) {
+    .LinkBar nav ul {
+        width: 250px;
+    }
+
+    .LinkBar nav ul li {
+        margin: 10px 0;
+        padding: 0 20px;
+    }
+
+    .LinkBar nav ul li a {
+        font-size: 1rem;
+    }
+
+    .menu-toggle {
+        right: 10px;
+        top: 10px;
+    }
 }
 
 /* Media Queries */
@@ -132,48 +202,5 @@ header ul li a.active
 
     header ul {
         font-size: 1.2rem; /* Dimensione del font originale */
-    }
-}
-
-/* Media query per mobile */
-@media only screen and (max-width: 767px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    .LinkBar nav ul {
-        display: none;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 250px;
-        height: 100vh;
-        background-color: white;
-        flex-direction: column;
-        padding-top: 60px;
-        transition: 0.4s;
-        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .LinkBar nav ul.active {
-        right: 0;
-        display: flex;
-    }
-
-    .LinkBar nav ul li {
-        margin: 10px 0;
-    }
-
-    /* Animazione hamburger */
-    .menu-toggle.active span:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .menu-toggle.active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .menu-toggle.active span:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
     }
 }
