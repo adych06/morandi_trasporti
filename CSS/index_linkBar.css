@@ -13,6 +13,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    width: 100%;
 }
 
 
@@ -74,20 +75,32 @@ header ul li a.active
     right: 20px;
     top: 20px;
     z-index: 1000;
-    background: rgba(176, 180, 180, 0.5); /* Sfondo grigio semi-trasparente */
-    border-radius: 5px; /* Bordi arrotondati */
+    background: rgba(47, 79, 79, 0.5);
+    border-radius: 5px;
 }
 
 .menu-toggle span {
     display: block;
     width: 25px;
     height: 3px;
-    background-color: white; /* Mantenute bianche */
+    background-color: white;
     margin: 5px 0;
     transition: 0.4s;
 }
 
 /* Stile base per il menu */
+.LinkBar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.LinkBar nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .LinkBar nav ul {
     display: none;
     position: fixed;
@@ -100,6 +113,7 @@ header ul li a.active
     padding-top: 60px;
     transition: 0.4s;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    margin: 0;
 }
 
 .LinkBar nav ul.active {
@@ -110,14 +124,22 @@ header ul li a.active
 .LinkBar nav ul li {
     margin: 15px 0;
     padding: 0 30px;
+    width: 100%;
 }
 
 .LinkBar nav ul li a {
     font-size: 1.2rem;
-    padding: 10px 0;
+    padding: 10px;
     display: block;
     width: 100%;
     color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Stile per la pagina corrente */
+.LinkBar nav ul li a.active {
+    background-color: darkslategray;
 }
 
 /* Animazione hamburger */
@@ -135,17 +157,27 @@ header ul li a.active
 
 /* Specifiche per smartphone */
 @media only screen and (max-width: 767px) {
+    body {
+        overflow-x: hidden;
+    }
+    
     .LinkBar nav ul {
-        width: 250px;
+        width: 100%;
+        margin: 0;
+        padding-top: 60px;
+        border: none;
     }
 
     .LinkBar nav ul li {
         margin: 10px 0;
         padding: 0 20px;
+        width: 100%;
     }
 
     .LinkBar nav ul li a {
         font-size: 1rem;
+        width: 100%;
+        margin: 0;
     }
 
     .menu-toggle {
