@@ -371,3 +371,48 @@ a{
   }
 }
 
+/* Regole base */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Previene lo scroll orizzontale */
+}
+
+/* Aggiusta il container principale */
+.slider, 
+.slideshow-container,
+main {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Media query per mobile */
+@media only screen and (max-width: 767px) {
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .slideshow-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mySlides {
+        width: 100%;
+        margin: 0;
+    }
+
+    .mySlides img {
+        width: 100%;
+        margin: 0;
+    }
+    .NewsText{
+      margin-top: 100%;
+    }
+}
+
