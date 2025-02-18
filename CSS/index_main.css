@@ -207,10 +207,7 @@ a{
 
 /* Media Queries */
 /* Per schermi piccoli (smartphone) */
-@media only screen {
-  body{
-    max-width: 500px;
-  }
+@media only screen and (max-width: 600px) {
   .NewsText, .WWD {
       font-size: 2rem; /* Riduci la dimensione del font */
       margin-top: 50%;
@@ -369,50 +366,5 @@ a{
       width: 20%; /* Aumenta la larghezza dell'immagine */
       margin-top: -22%; /* Regola il margine negativo */
   }
-}
-
-/* Regole base */
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden; /* Previene lo scroll orizzontale */
-}
-
-/* Aggiusta il container principale */
-.slider, 
-.slideshow-container,
-main {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-/* Media query per mobile */
-@media only screen and (max-width: 767px) {
-    body {
-        overflow-x: hidden;
-        width: 100%;
-    }
-
-    .slideshow-container {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    .mySlides {
-        width: 100%;
-        margin: 0;
-    }
-
-    .mySlides img {
-        width: 100%;
-        margin: 0;
-    }
-    .NewsText{
-      margin-top: 100%;
-    }
 }
 
