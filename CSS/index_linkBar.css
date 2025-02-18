@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
+  max-width: 100%;
 }
 
 .LinkBar{
@@ -62,15 +63,6 @@ header ul li a.active
     background: black;
     color: white;
 }
-
-.CompanyName p{
-    margin-top: 20%;
-    font-size: 5rem;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-}
-
 
 
 

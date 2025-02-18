@@ -1,11 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Support - Morandi</title>
+    <link rel="stylesheet" href="CSS/index_linkBar.css">
+    <link rel="stylesheet" href="CSS/support.css">
+    <link rel="stylesheet" href="CSS/index_outsideDetails.css">
+    <link rel="stylesheet" href="CSS/index_footer.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
-<body>    <div class="contactUs">
+
+<body class="poppins-regular">
+
+    <!-- barra dei link-->
+    <header class="LinkBar">
+        <nav>
+            <ul>
+                <li><a href="main_index.html" >Home</a></li>
+                <li><a href="main_aboutus.html">About Us</a></li>
+                <li><a href="main_services.html">Services</a></li>
+                <li><a href="main_support.html" class="active">Support</a></li>
+                <li><a href="main_login.html">Login / Registration</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <!-------------------------------------------------------->
+    <!-- pagina scrollabile -->
+<div class="support">
+    <div class="CompanyName">
+        <p><b>Support</b><p>
+    </div>
+    <div class="contactUs">
         <br>
         <div class="contText">
             <p>Contact Us</p>
@@ -25,6 +57,50 @@
             <br>
             <button type="button" id="contButton">Submit form</button>
         </form>
-    </div>  
+    </div>
+</div>
+    <!-------------------------------------------------------->
+    <!-- Footer Time -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="main_aboutus.html">About Us</a></li>
+                        <li><a href="main_services.html">Our Service</a></li>
+                        <li><a href="main_policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Functions</h4>
+                    <ul>
+                        <li><a href="#">Soon Available</a></li>
+                        <li><a href="#">Soon Available</a></li>
+                        <li><a href="#">Soon Available</a></li>
+                        <li><a href="#">Soon Available</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-------------------------------------------------------->
+    <script src="JS/index_contact.js"></script>
 </body>
 </html>
