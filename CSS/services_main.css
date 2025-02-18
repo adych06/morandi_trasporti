@@ -7,6 +7,157 @@
   scroll-behavior: smooth;
 }
 
-main{
-  background-color: white;
+main {
+  z-index: 1;
+  padding-top: 8vh;
+  margin-right: -11%;
+}
+
+/* TEXTS */
+.NewsText {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  margin-top: 8vh;
+  margin-right: -11%;
+  position: relative;
+  left: 45%;
+  transform: translateX(-50%);
+  z-index: -1000;
+}
+
+/* BOXES */
+.boxSx {
+  max-width: 70%;
+  position: relative;
+  margin-left: 10%;
+  margin-right: -11%;
+  display: flex;
+  gap: 5%;
+  align-items: center;
+  margin-top: 5%;
+  z-index: -1000;
+}
+
+.boxDx {
+  max-width: 70%;
+  position: relative;
+  margin-left: 20%;
+  margin-right: -11%;
+  display: flex;
+  gap: 5%;
+  align-items: center;
+  margin-top: 5%;
+  z-index: -1000;
+}
+
+.boxtextSx, .boxtextDx {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  z-index: -1000;
+}
+
+.boxtextSx b, .boxtextDx b {
+  font-size: 1.3rem;
+  display: block;
+  margin-bottom: 10px;
+  z-index: -1000;
+}
+
+.boxSx img, .boxDx img {
+  border-radius: 20px;
+  width: 45%;
+  z-index: -1000;
+}
+
+/* Timer specifico per services */
+#timer {
+  font-size: 1.3rem;
+  margin: 15px 0;
+  color: black;
+  font-weight: 500;
+  z-index: -1000;
+}
+
+.arrow-link {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  z-index: -1000;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 767px) {
+  main {
+    padding-top: 10vh;
+  }
+
+  .NewsText {
+    font-size: 1.8rem;
+    margin-top: 10vh;
+    left: 45%;
+  }
+
+  .boxSx, .boxDx {
+    max-width: 90%;
+    margin-left: 5%;
+    flex-direction: column;
+    margin-bottom: 5%;
+  }
+
+  .boxtextSx, .boxtextDx {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  #timer {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .arrow-link {
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  .boxSx img, .boxDx img {
+    border-radius: 15px;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  main {
+    padding-top: 9vh;
+  }
+
+  .NewsText {
+    font-size: 2rem;
+    margin-top: 9vh;
+    left: 45%;
+  }
+
+  .boxSx, .boxDx {
+    max-width: 80%;
+    margin-left: 10%;
+  }
+
+  .boxtextSx, .boxtextDx {
+    font-size: 0.85rem;
+  }
+
+  #timer {
+    font-size: 1.1rem;
+  }
+
+  .boxSx img, .boxDx img {
+    border-radius: 18px;
+    width: 100%;
+  }
 }

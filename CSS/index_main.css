@@ -39,9 +39,10 @@ main {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 60%;
+  max-width: 30%;
   position: relative;
   margin: auto;
+  z-index:-1000;
 }
 
 /* Hide the images by default */
@@ -135,6 +136,7 @@ main {
 }
 
 .boxtextSx{
+    z-index: -100;
     flex: 1;
 }
 
@@ -149,20 +151,16 @@ main {
 }
 
 .boxtextDx{
+  z-index: -100;
     flex: 1;
 }
 
-.img_sfondo
-{
-  max-width:800%;
-  margin-left:300%;
-  margin-top: 150%;
-}
 .img_inbasso
 {
     width: 20%;
     position: absolute;
     margin-top: -12.35%;
+    z-index: -1;
 }
 
 a{
@@ -178,6 +176,7 @@ a{
     padding: 1%;
     margin-top: 10%;
     margin-right: -11%;
+    z-index: 0;
 }
 
 .contText{

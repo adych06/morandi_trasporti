@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
+.sis
+{
+    margin-right: 11%;
+}
 
 .CompanyName {
     text-align: center;
