@@ -53,6 +53,7 @@ body {
     margin: 0;
     transition: 0.4s;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 9998;
 }
 
 .LinkBar nav ul.active {
