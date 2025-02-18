@@ -7,6 +7,10 @@
   scroll-behavior: smooth;
 }
 
+.sis{
+  margin-right: -11%;
+}
+
 /*PAGINA PRINCIPALE*/
 main {
     z-index: 1;
