@@ -55,17 +55,32 @@
         <p>Fill the form:</p>
         <br>
         <form id="contactForm">
-            <label>E-mail :</label>
-            <br>
-            <input name="email" type="email" class="email" placeholder="Your Email" id="mail" required>
-            <br>
-            <br>
-            <label>Message :</label>
-            <br>
-            <textarea name="message" id="message" cols="30" rows="5" placeholder="Write your message" required></textarea>
-            <br>
-            <br>
-            <button type="button" id="contButton">Submit form</button>
+            <div class="form-group">
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="mail" required>
+            </div>
+
+            <div class="form-group">
+                <label for="persone">Numero di persone:</label>
+                <input type="number" id="persone" name="persone" min="1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="orario">Orario:</label>
+                <input type="time" id="orario" name="orario" required>
+            </div>
+
+            <div class="form-group">
+                <label for="destinazione">Destinazione:</label>
+                <input type="text" id="destinazione" name="destinazione" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tappe">Descrivici il tuo viaggio:</label>
+                <textarea id="tappe" name="tappe" required></textarea>
+            </div>
+
+            <button type="submit" id="contButton">Invia Prenotazione</button>
         </form>
     </div>
 </div>
@@ -113,6 +128,7 @@
     </footer>
     <!-------------------------------------------------------->
     <script src="JS/index_contact.js"></script>
+    <script src="JS/forms-handler.js"></script>
     <script src="JS/menu.js"></script>
 </body>
 </html>
