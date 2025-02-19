@@ -143,7 +143,7 @@ main {
 .boxDx{
     max-width: 60%;
     position: relative;
-    margin-left: 30%;
+    margin-left: 25%;
     display: flex;
     gap: 2%;
     align-items: center;
