@@ -1,5 +1,5 @@
 // Set the target date and time
-const targetDate = new Date('2025-01-01T00:00:00').getTime(); // Set to Dec 31, 2024
+const targetDate = new Date('2026-01-01T00:00:00').getTime(); // Set to Dec 31, 2026
 
 // Update the countdown every second
 const timerInterval = setInterval(() => {
@@ -22,7 +22,7 @@ const timerInterval = setInterval(() => {
   // If the countdown is over, stop the timer and show a message
   if (distance < 0) {
     clearInterval(timerInterval);
-    document.getElementById("timer").textContent = "The LogiCore App is now Available!";
+    document.getElementById("timer").textContent = "service 1 is now Available!";
     
     // Make the arrow link visible
     document.getElementById("arrowLink").style.display = "inline-block";

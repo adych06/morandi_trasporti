@@ -7,9 +7,9 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
-.sis
+.support
 {
-    margin-right: 11%;
+    margin-right: -11%;
 }
 
 .CompanyName {
@@ -21,9 +21,6 @@
     color: black;
 }
 
-.support{
-    margin-top: -6%;
-}
 
 .contactUs {
     width: 80%;
@@ -32,7 +29,6 @@
     background-color: rgb(36, 36, 36);
     border-radius: 20px;
     color: white;
-    margin-right: -5%;
 }
 
 .contText {

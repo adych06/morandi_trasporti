@@ -27,7 +27,7 @@ main {
     object-fit:cover;
     z-index: -1;
     margin-top: 0;
-    border-radius: 0;
+    border-radius: 0px;
     filter: brightness(0.5);
 }
 
