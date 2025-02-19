@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let slideIndex = 0;
     const slides = document.getElementsByClassName("mySlides");
     const dots = document.getElementsByClassName("dot");
-    const slideInterval = 4000; // 3 secondi
+    const slideInterval = 2000; // 3 secondi
 
     // Funzione per nascondere tutte le slides e resettare i dots
     function hideAllSlides() {

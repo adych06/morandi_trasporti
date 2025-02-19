@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Funzione per gestire il menu in base alla dimensione dello schermo
     function handleMenuDisplay() {
-        if (window.innerWidth > 1024) {
+        if (window.innerWidth > 1440) {
             // Desktop: mostra sempre il menu
             navMenu.classList.add('active');
             menuToggle.style.display = 'none';
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Gestione click sul menu hamburger (solo mobile)
     menuToggle.addEventListener('click', function() {
-        if (window.innerWidth <= 1024) {
+        if (window.innerWidth <= 1440) {
             menuToggle.classList.toggle('active');
             navMenu.classList.toggle('active');
         }
