@@ -2,6 +2,9 @@
 emailjs.init("ygsqQaBAQxEvH8Uru");
 
 document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.LinkBar nav ul');
+
     // Gestione form di contatto
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
@@ -41,11 +44,12 @@ function handleContactForm(e) {
         timestamp: new Date().toLocaleString()
     };
 
-    // Usa i tuoi veri SERVICE_ID e TEMPLATE_ID da EmailJS
+    // Usa direttamente emailjs.send invece di chiamare sendEmail
     emailjs.send("service_ngbev5a", "template_ojc9mbc", templateParams)
         .then(function(response) {
             console.log("SUCCESS!", response.status, response.text);
             showMessage('Prenotazione inviata con successo!', 'success', e.target);
+            e.target.reset(); // Reset del form dopo l'invio
         })
         .catch(function(error) {
             console.error("FAILED...", error);
@@ -97,8 +101,8 @@ function sendEmail(templateParams, form) {
     submitButton.disabled = true;
 
     // Sostituisci questi valori con i tuoi reali ID da EmailJS
-    const SERVICE_ID = 'service_xxxxxx';  // Il tuo Service ID
-    const TEMPLATE_ID = 'template_xxxxxx'; // Il tuo Template ID
+    const SERVICE_ID = 'service_ngbev5a';  // Il tuo Service ID
+    const TEMPLATE_ID = 'template_ojc9mbc'; // Il tuo Template ID
 
     console.log('Invio email...', templateParams); // Per debug
 
