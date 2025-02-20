@@ -59,3 +59,15 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log("Numero di slides trovate:", slides.length);
     console.log("Numero di dots trovati:", dots.length);
 });
+const prev = document.getElementById('prev');
+const next = document.getElementById('next');
+
+document.addEventListener('input', function() {
+    if(prev.value = true){
+        slideIndex--;
+    }
+    else{
+        slideIndex++;
+    }
+});
+

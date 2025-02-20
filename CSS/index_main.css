@@ -57,7 +57,19 @@ main {
   display: none;
 }
 
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  cursor: grab;
+  touch-action: pan-y pinch-zoom;
+}
 
+.slide {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
 /* Caption text */
 .text {
   color: #000000;
