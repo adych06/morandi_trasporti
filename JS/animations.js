@@ -5,7 +5,8 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 }, {
-    threshold: 0.5 // L'animazione parte quando il 10% dell'immagine è visibile
+    threshold: 0.3 // L'animazione parte quando il 10% dell'immagine è visibile
 });
 
 document.querySelectorAll('img').forEach((img) => observer.observe(img));
+
