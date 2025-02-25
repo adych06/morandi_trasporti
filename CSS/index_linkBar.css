@@ -16,7 +16,7 @@ body {
     z-index: 9999;
     background: rgba(121, 121, 121, 0.5);
     margin-top: -1%;
-
+    transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
 }
 a
 {
