@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus da Noleggiare</title>
+    <link rel="stylesheet" href="CSS/bus.css">
+    <style>
+        /* Form nascosto di default */
+        .form-container {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-container button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Noleggio Bus</h1>
+        <p>Scegli il bus per il tuo viaggio!</p>
+    </header>
+
+    <section class="bus-container">
+        <div class="bus-card">
+            <img src="CSS/IMG/img_bus/volvo_9700_ew438yv.webp" alt="Bus 1" class="bus-image">
+            <h2>Volvo 9700 Prestige 62</h2>
+            <p class="capacity">Capienza: 62 persone</p>
+            <p class="price">€ al giorno</p>
+            <!-- Pulsante per mostrare il form -->
+            <button class="info-btn">Info e Prenota</button>
+
+            <!-- Form nascosto -->
+            <div class="form-container">
+                <form action="https://formspree.io/f/{your_form_id}" method="POST">
+                    <input type="hidden" name="bus" value="Volvo 9700 Prestige 62">
+                    <input type="hidden" name="capacity" value="62 persone">
+                    <input type="hidden" name="price" value="€ al giorno">
+                    <label for="email">La tua Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Inserisci la tua email" required>
+
+                    <label for="message">Messaggio:</label>
+                    <textarea name="message" id="message" placeholder="Scrivi il tuo messaggio qui" required></textarea>
+
+                    <button type="submit">Invia Richiesta</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Altri bus... -->
+        <!-- Aggiungi altri bus seguendo lo stesso schema -->
+    </section>
+
+    <footer>
+        <p>© 2025 Noleggio Bus. Tutti i diritti riservati.</p>
+    </footer>
+
+    <script>
+        // Aggiungiamo il codice JavaScript per alternare la visibilità del form
+        const infoButtons = document.querySelectorAll('.info-btn');
+
+        infoButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const formContainer = this.nextElementSibling; // Il form che segue il pulsante
+                if (formContainer.style.display === 'block') {
+                    formContainer.style.display = 'none'; // Nascondi il form
+                } else {
+                    formContainer.style.display = 'block'; // Mostra il form
+                }
+            });
+        });
+    </script>
+</body>
+</html>

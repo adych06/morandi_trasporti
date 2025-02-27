@@ -1,0 +1,214 @@
+/* Resetta alcuni stili di default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stile generale */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.bus-container img
+{
+    width: 310px;
+    height: 230px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Contenitore per i bus */
+.bus-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px auto;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+/* Stile per ogni card del bus */
+.bus-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.bus-card:hover {
+    transform: scale(1.05);
+}
+/* Stile per i pulsanti */
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+/* Stile per il pulsante 'Torna Indietro' */
+.back-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+.back-button:focus {
+    outline: none;
+}
+
+a.btn:hover {
+    background-color: #45a049;
+}
+/* Form nascosto di default */
+.form-container {
+    display: none;
+    margin-top: 20px;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+.bus-image {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-top: 15px;
+}
+
+.capacity, .price {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #555;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #292929;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Media Queries per dispositivi mobili */
+@media (max-width: 1200px) {
+    .bus-card {
+        width: 45%; /* Su schermi medi, la larghezza delle card scende al 45% */
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Riduce la dimensione del titolo su schermi più piccoli */
+    }
+
+    .bus-container {
+        justify-content: center;
+    }
+
+    .bus-card {
+        width: 80%; /* Le card occupano l'80% della larghezza su schermi piccoli */
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; /* Riduce ulteriormente la dimensione del titolo per schermi molto piccoli */
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .bus-card {
+        width: 100%; /* Su schermi molto piccoli, le card occupano tutta la larghezza */
+        margin: 10px 0;
+    }
+
+    .capacity, .price {
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 50px;
+}
