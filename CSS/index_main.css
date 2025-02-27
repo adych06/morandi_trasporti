@@ -73,14 +73,14 @@ main {
 /* Caption text */
 .text {
   color: #000000;
-  background-color: #ffffff;
+  background-color: white;
   opacity: 0.7;
   border-radius: 10px;
   margin-left: 5%;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   padding: 1% 1%;
   position: absolute;
-  bottom: 2%;
+  bottom: 4%;
   width: 20%;
   text-align: center;
 }
